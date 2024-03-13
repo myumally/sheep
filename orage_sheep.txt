@@ -1,0 +1,118 @@
+1
+Orage Sheep
+1
+Suivant
+1
+Code et Scenario : Domitille Vale
+2
+Suivant
+1
+Chapitre 1 : Acquitté
+3
+Suivant
+3
+Ni vivant, ni mort, vous êtes là, sans savoir que faire.
+4
+Essayer de respirer
+5
+Se concentrer sur ses sens
+6
+Attendre
+2
+Celà fait bien longtemps que votre dernier souffle s'est éloigné, pourtant la mort ne vient pas vous récupérer. Toutes forces vous a abandonné, vous êtes là, inanimé. Que faire ?
+5
+Se concentrer sur ses sens
+6
+Attendre
+2
+Une mélodie étouffée, vous ne savez pas si vous l'entendez réellement ou si ce n'est que le fruit de votre imagination. Pourtant ni l'un ni l'autre ne semblent possibles. Que faire ?
+4
+Essayer de respirer
+6
+Attendre
+3
+'Je    te    quitte.' Vous ne savez comment, mais tel est le message que la vie vous fait parvenir. Trois mots, séparés de pause si spacieuse qu'ils ne semble aucunement liés. Que faire ?
+4
+Essayer de respirer
+5
+Se concentrer sur ses sens
+7
+Ne rien faire
+2
+Que pouvez vous faire alors que votre esprit semble absent ? Dénudé de tout être, vous ne savez pas quoi faire, pouvez vous même vous en poser la question ?
+7
+Se demander quoi faire
+8
+Que suis-je ?
+2
+'Portée par une nuée de colibri fraîchement éclos, ondulant au rythme des battements de leurs ailes, cette créature mélodique réveillant les astres à chacune de ses renaissance, ne cessait de se faire oublié, d'elle-même.' Tel vous décrivent les écrits.
+9
+Que dois-je faire ?
+10
+Quels écrit ?
+2
+Vous devez dignement incarné la mélodie des defunts. Parfois entraînante, parfois calme, vous devez être une mélodie aussi fougueuse que l'océan, et ne jamais vous laisser submerger par la tempête.
+11
+Comment faire ?
+12
+Pourquoi ?
+1
+Les écrits. Qu'importe que ce soit ceux sur la porte des chiottes ou ceux de la table d'émeraude, tout est relatif.
+9
+Et que dois-je faire ?
+3
+En bondissant au dessus de l'orage, au dessus des nuages. En étant vivace comme les rayons du soleil. N'oubliez pas que vous n'êtes rien, si ce n'est, jamais "on repeat", et, toujours "on remix".
+12
+Pourquoi ?
+13
+D'accord
+14
+Pas d'accord
+2
+Tel est vôtre destinée.
+13
+D'accord
+14
+Pas d'accord
+1
+todo
+0
+todo
+1
+Co.. Comment ? Si c'est comme ça je n'est qu'à attendre le prochain nigaud qui apparaît ici, au fond du chateau d'eau ! Adieu misérable !
+15
+...
+1
+Chapitre 2 : le chateau d'eau.
+16
+Suivant
+3
+Du fond du chateau d'eau, vous remontez à la surface. Un corps flottant dans un château d'eau, suicide ou meurtre, de quel tentative s'agissait il ?
+17
+Suicide
+17
+Meurtre
+17
+Je ne sais pas
+2
+Peu importe, la question est de savoir si elle a réussi. Êtes vous mort ou vivant ?
+18
+Vivant
+19
+Mort
+1
+todo
+0
+todo
+2
+Intéressant, quelqu'un est-il au courant que ton corps est ici ?
+20
+Je ne sais pas
+21
+Celui qui voulait que je devienne la mélodie des defunts ou je sais pas quoi
+1
+todo
+0
+todo
+..fin
+

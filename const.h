@@ -13,8 +13,7 @@
 
 //police d'écriture
 
-#define FONT "fake.receipt.ttf" 
-#define FONTBIS "chlorinar.regular.ttf"
+#define FONT "fake.receipt.ttf"
 
 
 //parametre fenetre

@@ -92,8 +92,8 @@ void boucle_evenements(SDL_Event event, SDL_Window * window, struct boite** cur,
 					int y=event.button.y;
 					int i=0;
 					int j=0;
-					while (i<3){
-						while (j<3){
+					while (j<3){
+						while (i<3){
 							if((3*i+j)<(*cur)->nbrep){
 								if((x>i*WIDTH_REP)&&(x<i*WIDTH_REP+WIDTH_REP)){
 									if((y>j*HEIGHT_REP+HEIGHT_DIAG)&&(y<j*HEIGHT_REP+HEIGHT_DIAG+HEIGHT_REP)){
@@ -104,9 +104,10 @@ void boucle_evenements(SDL_Event event, SDL_Window * window, struct boite** cur,
 									}
 								}
 							}
-							j++;
+							i++;
 						}
-						i++;
+						i=0;
+						j++;
     				}
 					break;
 				case SDL_QUIT : 

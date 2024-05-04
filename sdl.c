@@ -39,7 +39,8 @@ void textrect(SDL_Renderer* renderer, int COULEUR_TEXT_R, int COULEUR_TEXT_G, in
 	SDL_Color couleur = {COULEUR_TEXT_R, COULEUR_TEXT_G, COULEUR_TEXT_B, COULEUR_TEXT_A};        
 	SDL_Surface * surf = TTF_RenderText_Blended(font, chaine, couleur);
 	SDL_Texture * text = SDL_CreateTextureFromSurface(renderer, surf);
-	SDL_RenderCopy(renderer, text, NULL, rect);
+	SDL_Rect dsrect = {rect->x, rect->y, rect->w, rect->h};
+	SDL_RenderCopy(renderer, text, NULL, &dsrect);
 }
 
 void afficherrep(SDL_Renderer* renderer, struct reponse * r, int i, int j, TTF_Font * font){

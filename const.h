@@ -13,7 +13,7 @@
 
 //police d'écriture
 
-#define FONT "fake.receipt.ttf"
+#define FONT "Unique.ttf"
 
 
 //parametre fenetre

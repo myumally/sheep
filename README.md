@@ -1,5 +1,9 @@
 # sheep
 
+Mon premier projet solo en c, très moche mais fonctionne. Il m'a permis de m'entrainer sur la lecture de fichier, la manipulation de pointeurs, et la sdl2.
+
+Il s'agit d'un petit jeu avec des textes et des choix multiples.
+
 Pour run avec l'interface sdl un peu moche :
 ```
 make

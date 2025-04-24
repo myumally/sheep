@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Emscripten-Generated Code</title>
+    <style>
+      div {
+        font-size: 30px;
+        text-align: left;
+        color: orange;
+      }
+	  #output {
+		  background: black;
+		  color: lime;
+		  padding: 10px;
+		  border: 2px dashed red;
+		  min-height: 40px;
+	  }
+
+    </style>
+  </head>
+  <body>
+	<div> Enjoy! :) </div>
+	<hr>
+    <textarea id="output" rows="20" cols="80" ></textarea>
+
+	<script>
+	  function clearDisplay() {
+		const output = document.getElementById("output");
+		if (output) output.value = '';
+	  }
+	</script>
+	
+    <script>
+      var outputElement = document.getElementById('output');
+      if (outputElement) outputElement.value = ''; // clear browser cache
+
+      window.Module = {
+        print(...args) {
+		  console.log('[CUSTOM PRINT TRIGGERED]');
+          console.log(...args);
+		  
+		  console.log('Output text:', args.join(' '));
+
+  
+          if (outputElement) {
+            var text = args.join(' ');
+            outputElement.value += text + "\n";
+            outputElement.scrollTop = outputElement.scrollHeight;
+          }
+        }
+
+      };
+    </script>
+
+    <script async type="text/javascript" src="main.js"></script>
+  </body>
+</html>

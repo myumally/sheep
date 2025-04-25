@@ -32,13 +32,24 @@ int main (int argc, char **argv){
 
                 rep = EM_ASM_INT({
                     return Asyncify.handleSleep(function(wakeUp) {
-                        document.getElementById('button').addEventListener("click", function() {
-                            var result = document.getElementById("rep").value;
+                        function handler(event) {
+                            var result = parseInt(event.target.id,10);
                             if (typeof clearDisplay === 'function') clearDisplay();
                             wakeUp(parseInt(result));
-                        }, { once: true }); 
+                            document.querySelectorAll('.button').forEach(button => {
+                                button.removeEventListener('click', handler);
+                            });
+                        }
+
+                        document.querySelectorAll('.button').forEach((button, index) => {
+                            if (index < $0) {
+                                button.addEventListener('click', handler);
+                            }
+                        });
+
+                        
                     });
-                });
+                }, b->nbrep);
 
                 if(rep){
                     cur=(graphe)+(*((((*cur)->rep)+(rep-1))))->next;

@@ -5,34 +5,51 @@
     <title>Emscripten-Generated Code</title>
     <style>
       div {
-        font-size: 30px;
+        font-size: 40px;
         text-align: center;
         margin: 0;
         position: absolute;
         top: 50%;
         left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -70%);
         color: orange;
       }
 	    #output {
+        font-size: 20px;
 		    background: black;
 		    color: lime;
 		    padding: 10px;
 		    border: 2px dashed red;
 		    min-height: 40px;
 	    }
+      .button {
+        font-size: 20px;
+		    background: black;
+		    color: orange;
+	    }
     </style>
   </head>
   <body>
-	  <div> Enjoy! :) 
-	  <hr>
+    <div>
+
+      Enjoy! :)
+
+	    <hr>
     
       <textarea id="output" rows="20" cols="80" ></textarea>
     
-    <hr>
-    <input id="rep" type="text">
-	  <button id="button">Go</button>
+      <hr>
+
+      <button id="1" class="button">1</button>
+      <button id="2" class="button">2</button>
+      <button id="3" class="button">3</button>
+      <button id="4" class="button">4</button>
+      <button id="5" class="button">5</button>
+      <button id="6" class="button">6</button>
+      <button id="7" class="button">7</button>
+      <button id="8" class="button">8</button>
+      <button id="9" class="button">9</button>
+
     </div>
 
 	  <script>

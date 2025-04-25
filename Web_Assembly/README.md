@@ -34,3 +34,7 @@ emcc graphe.c main.c -sASYNCIFY -sASYNCIFY_IMPORTS='["emscripten_asm_const_int"]
 ```
 
 - Launch with `live-server .` or with `npx serve`. Then click on the html file.
+
+## Test file
+
+In this version the `test.txt` was writed with the help of [chatGPT](https://openai.com/chatgpt/overview/), and the story was inspired by the film [Revolver (Guy Ritchie - 2005)](https://en.wikipedia.org/wiki/Revolver_(2005_film)).

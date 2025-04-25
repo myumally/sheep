@@ -6,30 +6,43 @@
     <style>
       div {
         font-size: 30px;
-        text-align: left;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         color: orange;
       }
-	  #output {
-		  background: black;
-		  color: lime;
-		  padding: 10px;
-		  border: 2px dashed red;
-		  min-height: 40px;
-	  }
-
+	    #output {
+		    background: black;
+		    color: lime;
+		    padding: 10px;
+		    border: 2px dashed red;
+		    min-height: 40px;
+	    }
     </style>
   </head>
   <body>
-	<div> Enjoy! :) </div>
-	<hr>
-    <textarea id="output" rows="20" cols="80" ></textarea>
+	  <div> Enjoy! :) 
+	  <hr>
+    
+      <textarea id="output" rows="20" cols="80" ></textarea>
+    
+    <hr>
+    <input id="rep" type="text">
+	  <button id="button">Go</button>
+    </div>
 
-	<script>
-	  function clearDisplay() {
-		const output = document.getElementById("output");
-		if (output) output.value = '';
-	  }
-	</script>
+	  <script>
+	    function clearDisplay() {
+        const output = document.getElementById("output");
+        if (output) output.value = '';
+        const rep = document.getElementById("rep");
+        if (rep) rep.value = '';
+	    }
+	  </script>
 	
     <script>
       var outputElement = document.getElementById('output');
@@ -37,19 +50,16 @@
 
       window.Module = {
         print(...args) {
-		  console.log('[CUSTOM PRINT TRIGGERED]');
-          console.log(...args);
-		  
-		  console.log('Output text:', args.join(' '));
 
-  
+          console.log(...args);
+
           if (outputElement) {
             var text = args.join(' ');
             outputElement.value += text + "\n";
             outputElement.scrollTop = outputElement.scrollHeight;
           }
-        }
 
+        }
       };
     </script>
 

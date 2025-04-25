@@ -30,18 +30,16 @@ int main (int argc, char **argv){
                     printf("%d : %s", i+1, r->text);
                 }
 
-				rep = EM_ASM_INT({
-					return Asyncify.handleSleep(function(wakeUp) {
-						// Laisse le temps au navigateur d'afficher les textes avant la popup
-						setTimeout(function() {
-							const result = prompt("Votre choix ?");
-							if (typeof clearDisplay === 'function') clearDisplay();
-							wakeUp(parseInt(result));
-						}, 50); // 50ms suffisent
-					});
-				});
-				
-				
+                rep = EM_ASM_INT({
+                    return Asyncify.handleSleep(function(wakeUp) {
+                        document.getElementById('button').addEventListener("click", function() {
+                            var result = document.getElementById("rep").value;
+                            if (typeof clearDisplay === 'function') clearDisplay();
+                            wakeUp(parseInt(result));
+                        }, { once: true }); 
+                    });
+                });
+
                 if(rep){
                     cur=(graphe)+(*((((*cur)->rep)+(rep-1))))->next;
                     b=*(cur);
@@ -52,7 +50,6 @@ int main (int argc, char **argv){
         }
 
         else{
-            // On affiche un message d'erreur si on veut
             printf("Impossible d'ouvrir le fichier\n");
         }
 

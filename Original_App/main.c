@@ -34,7 +34,7 @@ int main (int argc, char **argv){
                 printf("Impossible d'ouvrir le fichier");
             }
 
-            int fclose(FILE* fic);
+            fclose(fichier);
 
             TTF_CloseFont(font);
             SDL_DestroyWindow(window);

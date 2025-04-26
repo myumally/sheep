@@ -1,35 +1,31 @@
 ..0
 1
-Bonjour 3
+Bonjour.
 1
 Bonjour !
 
 ..1
 3
-comment va ?
+Comment ça va ?
 2
-bien
+Bien !
 3
-pas bien
+Pas bien...
 4
-wsh
+wsh?
 
 ..2
-1
-nickel
 0
-retour
+Nickel!
 
 ..3
-1
-rip
 0
-retour
+RIP
 
 ..4
 1
 wsh
 0
-wsh
+Partir et revenir
 
 ..fin

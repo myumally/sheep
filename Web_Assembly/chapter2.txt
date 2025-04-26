@@ -1,35 +1,21 @@
 ..0
+2
+Tu te réveille dans un endroit inconnu. Il fait sombre, très sombre.
 1
-Bonjour 2
-1
-Bonjour !
+Attendre que tes yeux s'adapte à l'obscurité
+2
+Avancer à l'aveuglette.
 
 ..1
-3
-comment va ?
+1
+Tu attend mais rien ne se passe. Tu te souviens alors que tu est aveugle.
 2
-bien
-3
-pas bien
-4
-wsh
+Avancer
 
 ..2
 1
-nickel
+Tu te prend un mur et perd connaissance.
 0
-retour
-
-..3
-1
-rip
-0
-retour
-
-..4
-1
-wsh
-0
-wsh
+zzz
 
 ..fin

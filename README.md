@@ -1,42 +1,40 @@
-# 🐑 sheep
+## 🌐 Version Web
 
-Mon premier projet solo en C : très moche, mais il fonctionne 😅  
-Il m'a permis de m'entraîner sur :
-- la lecture de fichiers,
-- la manipulation de pointeurs,
-- l'utilisation de SDL2.
+### 🛠️ Prérequis
 
-C’est un petit jeu avec du texte et des choix multiples.
-
-J'y suis revenu plus tard pour m’entraîner au WebAssembly. Le code C est toujours aussi affreux, parce que j’y ai à peine retouché 😬
+- git
+- Emscripten sdk
+- live-server or Node.js
 
 ---
 
-## 📦 Versions
+### 📦 Installation
 
-- 🖥️ [Version terminal (avec ou sans SDL)](./Original_App/)
-- 🌐 [Version Web (WebAssembly)](./Web_Assembly/)
+#### Emscripten
+
+Voir le [repo officiel d’emsdk](https://github.com/emscripten-core/emsdk)
+
+####  Node.js 
+
+Voir sur le [site officiel de Node.js](https://nodejs.org/en)
+
+#### live-server
+
+```
+npm install -g live-server
+```
 
 ---
 
-## ✏️ Modifier les textes
+## Compile and Launch
 
-Tu veux créer ton propre scénario ? Voici comment faire :
+- Compile with:
+```
+emcc graphe.c main.c -sASYNCIFY -sASYNCIFY_IMPORTS='["emscripten_asm_const_int"]' -sEXPORTED_FUNCTIONS='["_main"]' -sEXPORTED_RUNTIME_METHODS='["ccall", "cwrap"]' -o main.js --preload-file chapter1.txt --preload-file chapter2.txt --preload-file chapter3.txt
+```
 
-1. Crée un fichier `.txt`
-2. Suis ce format pour chaque "boîte de dialogue" :
-    ```
-    ..<numéro de la boîte de dialogue>
-    <nombre de réponses possibles>
-    <texte de la boîte de dialogue>
-    <numéro de destination pour la réponse 1>
-    <texte de la réponse 1>
-    <numéro de destination pour la réponse 2>
-    <texte de la réponse 2>
+- Launch with `live-server .` or with `npx serve`. Then click on the html file.
 
-    (saut de ligne obligatoire entre chaque boîte)
-    ```
-    🔍 Un exemple est dispo dans le fichier `test.txt`
-3. Mets à jour le nom du fichier dans `const.h`
+## Test file
 
-Et voilà ! Tu peux maintenant écrire le prochain chef-d’œuvre du jeu narratif 😄
+In this version the `test.txt` was writed with the help of [chatGPT](https://openai.com/chatgpt/overview/), and the story was inspired by the film [Revolver (Guy Ritchie - 2005)](https://en.wikipedia.org/wiki/Revolver_(2005_film)).

@@ -1,0 +1,5 @@
+# generated files
+*.js
+*.data
+*.wasm
+

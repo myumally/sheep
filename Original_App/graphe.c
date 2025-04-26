@@ -58,6 +58,9 @@ int stockage (FILE* f, struct boite*** ptgraphe){
         fgets(chaine,9,f);
         //printf("%s",chaine);
     }
+    free(chaine);
+    free(rien);
+    free(next);
     return c;
 }
 

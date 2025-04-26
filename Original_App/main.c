@@ -79,7 +79,7 @@ int main (int argc, char **argv){
             printf("Impossible d'ouvrir le fichier");
         }
 
-        int fclose(FILE* fic);
+        fclose(fichier);
     }
     return 0;
 }

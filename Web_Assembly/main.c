@@ -64,6 +64,6 @@ int main (int argc, char **argv){
             printf("Impossible d'ouvrir le fichier\n");
         }
 
-        int fclose(FILE* fic);
+        fclose(fichier);
     return 0;
 }
